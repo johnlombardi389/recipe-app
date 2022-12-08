@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: green;
+  margin: 0% 20%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgb(49, 49, 49);
+  margin: 2rem 0rem;
+}
