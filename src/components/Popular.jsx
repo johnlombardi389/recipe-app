@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 function Popular() {
   const getPopular = async () => {
     const api = await fetch(
@@ -5,6 +7,10 @@ function Popular() {
     );
     const data = await api.json();
   };
+
+  useEffect(() => {
+    getPopular();
+  }, []);
 
   return (
     <div>
