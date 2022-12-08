@@ -1,4 +1,6 @@
 import React from "react";
+// Components
+import Popular from "./components/Popular";
 
 function Home() {
   return (
