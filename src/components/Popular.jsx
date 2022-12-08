@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // Style
-import styledComponents from "styled-components";
+import styled from "styled-components";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
@@ -9,7 +9,9 @@ function Popular() {
 
   const getPopular = async () => {
     const api = await fetch(
-      `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
+      `https://api.spoonacular.com/recipes/random?apiKey=${
+        import.meta.env.VITE_REACT_APP_API_KEY
+      }&number=9`
     );
     const data = await api.json();
     setPopular(data.recipes);
@@ -23,14 +25,26 @@ function Popular() {
     <div>
       <StyledPopular>
         <h3>Popular Recipes</h3>
-        {popular.map((recipe) => {
-          return (
-            <Card>
-              <p>{recipe.title}</p>
-              <img src={recipe.image} alt={recipe.title} />
-            </Card>
-          );
-        })}
+        <Splide
+          options={{
+            perPage: 4,
+            arrows: false,
+            pagination: false,
+            drag: "free",
+            gap: "5rem",
+          }}
+        >
+          {popular.map((recipe) => {
+            return (
+              <SplideSlide key={recipe.id}>
+                <Card>
+                  <p>{recipe.title}</p>
+                  <img src={recipe.image} alt={recipe.title} />
+                </Card>
+              </SplideSlide>
+            );
+          })}
+        </Splide>
       </StyledPopular>
     </div>
   );
