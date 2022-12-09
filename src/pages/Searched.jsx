@@ -24,6 +24,11 @@ function Searched() {
 
   return (
     <section>
+      {searchedRecipes.length === 0 ? (
+        <NoResults>Your search had no matches, please try again</NoResults>
+      ) : (
+        ""
+      )}
       <Grid>
         {searchedRecipes.map((item) => {
           return (
@@ -39,7 +44,7 @@ function Searched() {
 }
 
 const Grid = styled.main`
-  min-height: 60vh;
+  min-height: 40vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
@@ -57,6 +62,14 @@ const Card = styled.div`
     text-align: center;
     padding: 1rem;
   }
+`;
+
+const NoResults = styled.p`
+  font-size: 3rem;
+  text-align: center;
+  padding: 5rem;
+  background: purple;
+  border-radius: 2rem;
 `;
 
 export default Searched;
