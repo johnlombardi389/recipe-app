@@ -29,7 +29,7 @@ function Popular() {
   }, []);
 
   return (
-    <div>
+    <section>
       <StyledPopular>
         <h3>Popular Recipes</h3>
         <Splide
@@ -54,7 +54,7 @@ function Popular() {
           })}
         </Splide>
       </StyledPopular>
-    </div>
+    </section>
   );
 }
 
