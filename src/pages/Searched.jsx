@@ -12,7 +12,7 @@ function Searched() {
     const data = await fetch(
       `https://api.spoonacular.com/recipes/complexSearch?apiKey=${
         import.meta.env.VITE_REACT_APP_API_KEY
-      }&query=${name}`
+      }&query=${name}&number=25`
     );
     const recipes = await data.json();
     setSearchedRecipes(recipes.results);
@@ -38,7 +38,8 @@ function Searched() {
   );
 }
 
-const Grid = styled.div`
+const Grid = styled.main`
+  min-height: 60vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
