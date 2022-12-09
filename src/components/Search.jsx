@@ -7,6 +7,10 @@ import { FaSearch } from "react-icons/fa";
 function Search() {
   const [input, setInput] = useState("");
 
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <StyledSection>
       <StyledForm>
