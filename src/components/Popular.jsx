@@ -16,7 +16,7 @@ function Popular() {
       const api = await fetch(
         `https://api.spoonacular.com/recipes/random?apiKey=${
           import.meta.env.VITE_REACT_APP_API_KEY
-        }&number=9`
+        }&number=8`
       );
       const data = await api.json();
       localStorage.setItem("popular", JSON.stringify(data.recipes));
@@ -35,9 +35,9 @@ function Popular() {
         <Splide
           options={{
             perPage: 4,
-            arrows: false,
             pagination: false,
             drag: "free",
+            snap: true,
             gap: "5rem",
           }}
         >
