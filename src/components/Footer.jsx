@@ -74,10 +74,6 @@ function Footer() {
 const StyledFooter = styled.footer`
   background: white;
   padding: 2% 20%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
 `;
 
 const Row = styled.div`

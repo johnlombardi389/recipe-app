@@ -1,13 +1,13 @@
 // Components
 import Popular from "../components/Popular";
-import RecipeDay from "../components/RecipeDay";
+import Info from "../components/Info";
 
 function Home() {
   return (
     <div>
       <h1>Home</h1>
       <Popular />
-      <RecipeDay />
+      <Info />
     </div>
   );
 }
