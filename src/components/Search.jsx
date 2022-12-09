@@ -5,11 +5,19 @@ import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
 
 function Search() {
+  const [input, setInput] = useState("");
+
   return (
     <StyledSection>
       <StyledForm>
         <FaSearch />
-        <input type="text" />
+        <input
+          onChange={(e) => {
+            setInput(e.target.value);
+          }}
+          type="text"
+          value={input}
+        />
       </StyledForm>
       <h1>Hello</h1>
     </StyledSection>
