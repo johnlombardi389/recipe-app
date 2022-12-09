@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 // Style
 import styled from "styled-components";
 // Icons
@@ -7,10 +8,12 @@ function Nav() {
   return (
     <StyledHeader>
       <nav>
-        <Logo>
-          <GiOrange />
-          <p>Company Name</p>
-        </Logo>
+        <NavLink to="/">
+          <Logo>
+            <GiOrange />
+            <p>Company Name</p>
+          </Logo>
+        </NavLink>
         <div>
           <ul>
             <li>
