@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 // Style
 import styled from "styled-components";
+// Image
+import personNone from "../assets/personNone.png";
 
 function Searched() {
   const [searchedRecipes, setSearchedRecipes] = useState([]);
@@ -28,7 +30,10 @@ function Searched() {
         {searchedRecipes.length} results for "{params.search}"
       </h3>
       {searchedRecipes.length === 0 ? (
-        <NoResults>Your search had no matches, please try again</NoResults>
+        <NoResults>
+          <p>Your search had no matches, please try again</p>
+          <img src={personNone} alt="Your search returned no results" />
+        </NoResults>
       ) : (
         ""
       )}
@@ -57,7 +62,6 @@ const StyledSection = styled.section`
 `;
 
 const Grid = styled.main`
-  min-height: 40vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
@@ -81,12 +85,15 @@ const Card = styled.div`
   }
 `;
 
-const NoResults = styled.p`
-  font-size: 3rem;
+const NoResults = styled.div`
   text-align: center;
   padding: 5rem;
-  background: purple;
-  border-radius: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  p {
+    font-size: 2rem;
+    color: red;
+  }
 `;
 
 export default Searched;
