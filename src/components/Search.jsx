@@ -45,19 +45,20 @@ const StyledForm = styled.form`
     width: 100%;
     border: none;
     font-size: 1.5rem;
-    background: linear-gradient(35deg, #494949, #313131);
-    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    color: black;
     padding: 1rem 3rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     outline: none;
   }
   svg {
     width: 1.2rem;
     height: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 50%;
-    left: 2.5%;
+    left: 3%;
     transform: translate(-100%, -50%);
   }
 `;
