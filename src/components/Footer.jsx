@@ -81,6 +81,8 @@ const Row = styled.div`
   justify-content: space-between;
   align-items: center;
   h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
     font-size: 1.2rem;
   }
 `;
@@ -90,6 +92,12 @@ const List = styled.ul`
   padding: 1rem 0rem;
   line-height: 2rem;
   cursor: pointer;
+  li {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
 `;
 
 const Logo = styled.div`
@@ -103,8 +111,9 @@ const Logo = styled.div`
     padding-right: 1rem;
   }
   p {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
     font-size: 2rem;
-    color: blue;
   }
 `;
 
