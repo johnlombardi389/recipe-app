@@ -90,8 +90,9 @@ const Card = styled.div`
     color: white;
     width: 100%;
     text-align: center;
-    font-weight: 600;
-    font-size: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
     height: 40%;
     display: flex;
     justify-content: center;

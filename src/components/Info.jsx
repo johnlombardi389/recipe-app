@@ -52,7 +52,7 @@ const Description = styled.div`
   p {
     font-family: "Crimson Text", serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 2rem;
     line-height: 2.5rem;
   }
