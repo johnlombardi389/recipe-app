@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 // Style
 import styled from "styled-components";
 // Icons
@@ -47,10 +48,12 @@ function Footer() {
         </div>
 
         <div>
-          <Logo>
-            <GiOrange />
-            <p>Company Name</p>
-          </Logo>
+          <NavLink to="/" style={{ textDecoration: "none" }}>
+            <Logo>
+              <GiOrange />
+              <p>Company Name</p>
+            </Logo>
+          </NavLink>
           <Socials>
             <li>
               <FaYoutube />
@@ -115,6 +118,7 @@ const Logo = styled.div`
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
     font-size: 2rem;
+    color: black;
   }
 `;
 

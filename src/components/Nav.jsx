@@ -8,7 +8,7 @@ function Nav() {
   return (
     <StyledHeader>
       <nav>
-        <NavLink to="/">
+        <NavLink to="/" style={{ textDecoration: "none" }}>
           <Logo>
             <GiOrange />
             <p>Company Name</p>
@@ -36,9 +36,6 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a {
-      text-decoration: none;
-    }
     ul {
       list-style: none;
       display: flex;
@@ -62,13 +59,16 @@ const Logo = styled.div`
   align-items: center;
   cursor: pointer;
   svg {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     padding-right: 1rem;
+    color: #0f423b;
   }
   p {
-    font-size: 1rem;
-    color: blue;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
   }
 `;
 
