@@ -109,6 +109,7 @@ const Logo = styled.div`
     width: 5rem;
     height: 5rem;
     padding-right: 1rem;
+    color: #0f423b;
   }
   p {
     font-family: "Josefin Sans", sans-serif;
@@ -124,7 +125,7 @@ const Socials = styled.ul`
   align-items: center;
   cursor: pointer;
   svg {
-    color: blue;
+    color: #0f423b;
     width: 2rem;
     height: 2rem;
   }
