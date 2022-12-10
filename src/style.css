@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+/*
+    font-family: 'Crimson Text', serif;
+    400, 700
+
+    font-family: 'Josefin Sans', sans-serif;
+    100, 400, 700
+*/
+
 body {
   background: white;
 }
