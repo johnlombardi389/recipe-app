@@ -8,12 +8,17 @@ function Info() {
     <section>
       <FlexDiv>
         <Description>
-          <h5>Hello</h5>
+          <h5>We make dinner easy</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic
             excepturi deleniti! Sint laudantium sit beatae hic necessitatibus
             corporis eos exercitationem, ipsa eveniet eaque, asperiores
             dignissimos eum voluptate? Vitae, ipsam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            illo consectetur aliquam asperiores saepe eum sequi voluptatum autem
+            odit sapiente!
           </p>
         </Description>
 
