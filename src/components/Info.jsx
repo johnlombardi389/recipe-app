@@ -43,11 +43,16 @@ const Description = styled.div`
   justify-content: center;
   padding-right: 1rem;
   h5 {
-    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
   }
   p {
-    padding-top: 1rem;
-    line-height: 2rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 2rem;
+    line-height: 2.5rem;
   }
 `;
 
