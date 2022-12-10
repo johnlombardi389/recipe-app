@@ -46,12 +46,14 @@ const Description = styled.div`
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
     font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 2rem 0rem;
   }
   p {
     font-family: "Crimson Text", serif;
     font-weight: 400;
     font-size: 1rem;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
     line-height: 2.5rem;
   }
 `;

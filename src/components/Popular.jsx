@@ -60,6 +60,13 @@ function Popular() {
 
 const StyledPopular = styled.div`
   margin: 4rem 0rem;
+  h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 2rem 0rem;
+  }
 `;
 
 const Card = styled.div`
