@@ -23,7 +23,10 @@ function Searched() {
   }, [params.search]);
 
   return (
-    <section>
+    <StyledSection>
+      <h3>
+        {searchedRecipes.length} results for "{params.search}"
+      </h3>
       {searchedRecipes.length === 0 ? (
         <NoResults>Your search had no matches, please try again</NoResults>
       ) : (
@@ -39,21 +42,32 @@ function Searched() {
           );
         })}
       </Grid>
-    </section>
+    </StyledSection>
   );
 }
+
+const StyledSection = styled.section`
+  h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 2rem 0rem;
+  }
+`;
 
 const Grid = styled.main`
   min-height: 40vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
+  margin-bottom: 5rem;
 `;
 
 const Card = styled.div`
   img {
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
   a {
     text-decoration: none;
@@ -61,6 +75,9 @@ const Card = styled.div`
   h4 {
     text-align: center;
     padding: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.35rem;
   }
 `;
 
