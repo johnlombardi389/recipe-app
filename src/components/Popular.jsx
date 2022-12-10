@@ -47,8 +47,8 @@ function Popular() {
                 <Card>
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
+                  <Gradient />
                 </Card>
-                <Gradient />
               </SplideSlide>
             );
           })}
@@ -64,11 +64,10 @@ const StyledPopular = styled.div`
 
 const Card = styled.div`
   min-height: 25rem;
-  border-radius: 2rem;
   overflow: hidden;
   position: relative;
+  border-radius: 1rem;
   img {
-    border-radius: 2rem;
     position: absolute;
     left: 0;
     width: 100%;
@@ -79,7 +78,7 @@ const Card = styled.div`
     position: absolute;
     z-index: 10;
     left: 50%;
-    bottom: 0%;
+    bottom: -10%;
     transform: translate(-50%, 0%);
     color: white;
     width: 100%;
