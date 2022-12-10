@@ -31,7 +31,7 @@ function Nav() {
 
 const StyledHeader = styled.header`
   padding: 2% 20%;
-  background: white;
+  background: #fbbb62;
   nav {
     display: flex;
     justify-content: space-between;

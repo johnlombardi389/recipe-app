@@ -72,7 +72,7 @@ function Footer() {
 }
 
 const StyledFooter = styled.footer`
-  background: white;
+  background: #fbbb62;
   padding: 2% 20%;
 `;
 
