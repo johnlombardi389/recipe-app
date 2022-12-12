@@ -47,6 +47,14 @@ function Recipe() {
           <img src={details.image} alt={details.title} />
         </div>
       </RecipeIntro>
+      <RecipeTags>
+        <ul>
+          {details.vegan ? <li>Vegan</li> : ""}
+          {details.vegetarian ? <li>Vegetarian</li> : ""}
+          {details.dairyFree ? <li>Dairy Free</li> : ""}
+          {details.glutenFree ? <li>Gluten Free</li> : ""}
+        </ul>
+      </RecipeTags>
       <Ingredients>
         <h4>Ingredients</h4>
         <p>Hello</p>
@@ -99,6 +107,19 @@ const RecipeIntroText = styled.div`
     font-family: "Crimson Text", serif;
     font-weight: 400;
     font-size: 1rem;
+  }
+`;
+
+const RecipeTags = styled.div`
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      background: yellow;
+      padding: 0.5rem 1.5rem;
+      margin-right: 1rem;
+      border-radius: 0.5rem;
+    }
   }
 `;
 
