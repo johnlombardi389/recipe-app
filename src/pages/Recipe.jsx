@@ -6,7 +6,7 @@ import styled from "styled-components";
 function Recipe() {
   return (
     <div>
-      <h1>Recipe</h1>
+      <h1>Recipe Page</h1>
     </div>
   );
 }
