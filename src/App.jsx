@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 // Pages
 import Home from "./pages/Home";
 import Searched from "./pages/Searched";
+import Recipe from "./pages/Recipe";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/searched/:search" element={<Searched />} />
+        <Route path="/recipe/:name" element={<Recipe />} />
       </Routes>
       <Footer />
     </div>
