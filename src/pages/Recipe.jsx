@@ -41,16 +41,28 @@ function Recipe() {
               <p>{details.servings} servings</p>
             </li>
           </ul>
+          <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>
         </RecipeIntroText>
-        <img src={details.image} alt={details.title} />
+        <div>
+          <img src={details.image} alt={details.title} />
+        </div>
       </RecipeIntro>
+      <Ingredients>
+        <h4>Ingredients</h4>
+        <p>Hello</p>
+      </Ingredients>
+      <Instructions>
+        <h4>Instructions</h4>
+        <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
+      </Instructions>
     </section>
   );
 }
 
 const RecipeIntro = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items; center;
 `;
 
 const RecipeIntroText = styled.div`
@@ -60,6 +72,47 @@ const RecipeIntroText = styled.div`
     font-size: 2rem;
     line-height: 2.5rem;
     margin: 2rem 0rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      display: flex;
+      align-items: center;
+      svg {
+        width: 2rem;
+        height: 2rem;
+        color: orange;
+      }
+      p {
+        padding: 0 1rem;
+        margin-right: 2rem;
+        font-family: "Crimson Text", serif;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+  }
+  p {
+    padding-top: 3rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+`;
+
+const Instructions = styled.div`
+  padding-top: 5rem;
+  p {
+    padding-top: 1rem;
+  }
+`;
+
+const Ingredients = styled.div`
+  padding-top: 5rem;
+  p {
+    padding-top: 1rem;
   }
 `;
 
