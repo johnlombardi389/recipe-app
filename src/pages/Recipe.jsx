@@ -23,7 +23,6 @@ function Recipe() {
 
   useEffect(() => {
     fetchDetails();
-    console.log(details);
   }, [params.name]);
 
   return (
@@ -57,7 +56,11 @@ function Recipe() {
       </RecipeTags>
       <Ingredients>
         <h4>Ingredients</h4>
-        <p>Hello</p>
+        <ul>
+          {details.extendedIngredients.map((ingredient) => (
+            <li key={ingredient.id}>{ingredient.original}</li>
+          ))}
+        </ul>
       </Ingredients>
       <Instructions>
         <h4>Instructions</h4>
